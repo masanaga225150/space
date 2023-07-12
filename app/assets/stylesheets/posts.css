@@ -1,0 +1,19 @@
+.wrapper {
+  height: 100vh;
+}
+
+.menu-header {
+  background-color: #ffffff77;
+  height: 100px;
+  padding: 20px;
+}
+.menu {
+  background-color: #2038d0;
+  height: calc(100vh - 100px - 90px);
+  padding: 50px 20px;
+}
+.form {
+  background-color: #000000;
+  height: 90px;
+  padding: 20px;
+}
