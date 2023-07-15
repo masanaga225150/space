@@ -28,6 +28,10 @@
 - belongs_to :user  
 - has_many :comments
 - has_many :favorites
+- belongs_to :know
+- belongs_to :travel
+- belongs_to :development
+- belongs_to :environment
      
 ## comments テーブ  ル 
      
@@ -53,4 +57,43 @@
   
 - belongs_to :user  
 - belongs_to :post
-  
+
+## knows テーブル
+
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | -------------------------------|
+| information            | text       | null: false                    |
+
+### Association
+
+- has_many :posts
+
+## travels テーブル
+
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | -------------------------------|
+| experience             | text       | null: false                    |
+
+### Association
+
+- has_many :posts
+
+## developments テーブル
+
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | -------------------------------|
+| status                 | text       | null: false                    |
+
+### Association
+
+- has_many :posts
+
+## environments テーブル
+
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | -------------------------------|
+| issue                  | text       | null: false                    |
+
+### Association
+
+- has_many :posts

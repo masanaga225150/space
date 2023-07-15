@@ -1,0 +1,66 @@
+.menu-header {
+  background-color: #ffffff77;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-name a {
+  font-size: 40px;
+  color: rgb(59, 63, 65);
+  text-decoration: none;
+}
+
+.menu-header.btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-header .btns > div {
+  margin-right: 10px;
+}
+
+.login-btn input[type="submit"],
+.sign-up-btn input[type="submit"] {
+  background-color: #ffffff;
+  color: #2038d0;
+  border: none;
+  padding: 0px 20px 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu {
+  background-image: url("宇宙.jpg");
+  background-size: 95%;
+  height: calc(100vh - 80px - 50px);
+  display: flex;
+  justify-content: center;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction:column;
+  font-size: 20px;
+  padding: 50px;
+}
+
+.menu-btn input[type="submit"] {
+  margin-bottom: 20px;
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.form {
+  background-color: #02020233;
+  height: 50px;
+  padding: 20px;
+  background-image: url("惑星.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
