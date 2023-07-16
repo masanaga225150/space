@@ -1,7 +1,7 @@
 .menu-header {
   background-color: #ffffff77;
   height: 80px;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -19,16 +19,6 @@
 
 .menu-header .btns > div {
   margin-right: 10px;
-}
-
-.login-btn input[type="submit"],
-.sign-up-btn input[type="submit"] {
-  background-color: #ffffff;
-  color: #2038d0;
-  border: none;
-  padding: 0px 20px 5px;
-  font-size: 16px;
-  cursor: pointer;
 }
 
 .menu {
@@ -54,6 +44,22 @@
   width: 300px;
   border-radius: 5px;
   justify-content: center;
+}
+
+.login-btn,
+.sign-up-btn {
+    display: block;
+    background-color: #cccff4;
+    justify-content: flex-end;
+    text-decoration: none; 
+    color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 7px;
+    margin-block-end: auto;
+    float: right;
+    text-align: right;
+    margin-top: 8px;
 }
 
 .form {

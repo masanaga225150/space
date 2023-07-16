@@ -4,12 +4,9 @@
   </div>
     <p>connecting the world in space</p>
   <div class="btns">  
-    <div class="login-btn">
-      <input type="submit" value="ログイン"/>
+      <%= link_to 'ログイン', new_user_session_path, class:"login-btn" %>
     </div>
-    <div class="sign-up-btn">
-      <input type="submit" value="新規登録"/>
-    </div>
+      <%= link_to '新規登録', new_user_registration_path, class:"sign-up-btn" %>
   </div>
 </div>
 
@@ -23,4 +20,5 @@
 </div>
 
 <div class="form">
+
 </div>
