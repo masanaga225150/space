@@ -1,7 +1,7 @@
 .menu-header {
   background-color: #ffffff77;
   height: 80px;
-  padding: 15px;
+  padding: 13px;
   display: flex;
   justify-content: space-between;
 }
@@ -10,6 +10,70 @@
   font-size: 40px;
   color: rgb(59, 63, 65);
   text-decoration: none;
+}
+
+p {
+  font-size:1em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: #a5b7ff;
+	text-shadow: 
+		0 0.05em 0.08em rgba(0,0,0,0.7);
+  margin-left: 80px;
+}
+
+.nav {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 40%;
+  padding: 1.5vh 50px;
+}
+
+.btns {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.user-nickname {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+.logout {
+  text-decoration: none;
+  color: black;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(197, 193, 193);
+}
+
+.login {
+  text-decoration: none;
+  line-height: 32px;
+  margin-right: 3vw;
+  color: black;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(197, 193, 193);
+}
+
+.sign-up {
+  text-decoration: none;
+  color: black;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(197, 193, 193);
 }
 
 .menu-header.btns {
@@ -44,22 +108,6 @@
   width: 300px;
   border-radius: 5px;
   justify-content: center;
-}
-
-.login-btn,
-.sign-up-btn {
-    display: block;
-    background-color: #cccff4;
-    justify-content: flex-end;
-    text-decoration: none; 
-    color: blue;
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 7px;
-    margin-block-end: auto;
-    float: right;
-    text-align: right;
-    margin-top: 8px;
 }
 
 .form {
