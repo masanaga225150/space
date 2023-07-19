@@ -10,6 +10,8 @@
   font-size: 40px;
   color: rgb(59, 63, 65);
   text-decoration: none;
+  text-shadow: 
+		0 0.05em 0.08em rgba(0,0,0,0.7);
 }
 
 p {
@@ -29,22 +31,27 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 40%;
-  padding: 1.5vh 50px;
+  padding: 1vh 50px;
 }
 
 .btns {
   display: flex;
-  text-align: center;
-  list-style: none;
-  align-items: center;
+  justify-content: center; /* 横方向に中央揃え */
   margin-top: 10px;
+  list-style: none;
+  width: 100%;
 }
 
 .user-nickname {
   text-decoration: none;
+  margin-top: 0.5vh;
   margin-right: 3vw;
   color: #333333;
   font-weight: bold;
+  width: 100px; /* 幅を縮める */
+  display: flex; /* フレックスコンテナにする */
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 縦方向に中央揃え */
 }
 
 .logout {
@@ -54,17 +61,24 @@ p {
   border-radius: 5px;
   padding: 5px;
   background-color: rgb(197, 193, 193);
+  width: 100px; /* 幅を縮める */
+  display: flex; /* フレックスコンテナにする */
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 縦方向に中央揃え */
 }
 
 .login {
   text-decoration: none;
-  line-height: 32px;
   margin-right: 3vw;
   color: black;
   border: 2px solid #000;
   border-radius: 5px;
   padding: 5px;
   background-color: rgb(197, 193, 193);
+  width: 100px; /* 幅を縮める */
+  display: flex; /* フレックスコンテナにする */
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 縦方向に中央揃え */
 }
 
 .sign-up {
@@ -74,6 +88,10 @@ p {
   border-radius: 5px;
   padding: 5px;
   background-color: rgb(197, 193, 193);
+  width: 100px; /* 幅を縮める */
+  display: flex; /* フレックスコンテナにする */
+  justify-content: center; /* 横方向に中央揃え */
+  align-items: center; /* 縦方向に中央揃え */
 }
 
 .menu-header.btns {
@@ -91,23 +109,135 @@ p {
   height: calc(100vh - 80px - 50px);
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  flex-wrap: wrap;
 }
 
 .menu-btn {
   display: flex;
   align-items: center;
-  text-align: center;
-  flex-direction:column;
+  flex-direction: column;
   font-size: 20px;
   padding: 50px;
 }
 
-.menu-btn input[type="submit"] {
-  margin-bottom: 20px;
-  height: 40px;
-  width: 300px;
+.post-btn {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 3px;
   border-radius: 5px;
+  height: 30px;
+  width: 300px;
+  margin: 20px;
+}
+
+.posts-info-main {
+  background-color: #f5f5f5;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 400px;
+}
+
+.posts-info-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.indispensable {
+  background: #ea352d;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.weight-bold-text {
+  font-weight: bold;
+  width: 100%;
+}
+
+.select-box {
+  height: 30px;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.posts-explain {
+  margin-top: 20px;
+}
+
+.posts-text {
+  width: 100%;
+  height: 30px;
+}
+
+.posts-info-text {
+  width: 100%;
+  height: 200px;
+}
+
+.img-upload {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.click-upload {
+  margin: 0px 20px 10px 0;
+  min-width: 250px;
+}
+
+.click-upload>p {
+  margin-bottom: 15px;
+  color: black;
+}
+
+.new-items {
+  display: flex;
+  width: 100px;
+}
+
+.items-text {
+  font-size: 15px;
+  min-width: 250px;
+}
+
+.posts-btn-contents {
+  display: flex;
   justify-content: center;
+  margin: 30px;
+}
+
+.posts-btn {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(197, 193, 193);
+  margin: 20px;
+  width: 300px;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: black;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin: 25px;
 }
 
 .form {

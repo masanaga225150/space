@@ -1,30 +1,11 @@
-<div class="menu-header">
-  <div class="app-name">
-    <a href="#">SPACE</a>
-  </div>
-    <p>connecting the world in space</p>
-  <div class="nav">
-    <ul class='btns'>
-      <% if user_signed_in? %>
-        <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
-        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-      <% else %>  
-        <li><%= link_to 'ログイン', new_user_session_path, class:"login" %></li>
-        <li><%= link_to '新規登録', new_user_registration_path, class:"sign-up" %></li>
-      <% end %>
-    </ul>
-  </div>
-</div>
-
 <div class="menu">
   <div class="menu-btn">
-    <input type="submit" value="投稿する"/>
-    <input type="submit" value="知る"/>
-    <input type="submit" value="旅してみる"/>
-    <input type="submit" value="環境問題について考える"/>
+    <%= link_to"投稿する", new_post_path, class:"post-btn" %>
+    <%= link_to"知る", new_post_path, class:"post-btn" %>
+    <%= link_to"旅してみる", new_post_path, class:"post-btn" %>
+    <%= link_to"環境問題について考える", new_post_path, class:"post-btn" %>
   </div>
 </div>
 
 <div class="form">
-
 </div>
