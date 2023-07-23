@@ -1,0 +1,27 @@
+.form a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  color: white;
+}
+
+.form-show {
+  height: 50px;
+  padding: 20px;
+  background-image: url("sky.jpg");
+}
+
+.form {
+  background-color: #02020233;
+  height: 50px;
+  width: 100%;
+  padding: 20px;
+  background-image: url("惑星.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.image-list {
+  margin-bottom: 20px;
+  height: 20px;
+}

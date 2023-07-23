@@ -12,10 +12,11 @@
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :image, id:"item-image" %>
+        <%= f.file_field :image, id:"post-image", onchange: "previewImage(this);" %>
+        <div id="preview"></div>
       </div>
     </div>
-
+      <%= javascript_pack_tag 'preview-image' %>
     <div class="new-posts">
       <div class="weight-bold-text">
         ジャンル
@@ -41,3 +42,4 @@
     </div>
   </div>
 <% end %>
+<%= render "footer" %>

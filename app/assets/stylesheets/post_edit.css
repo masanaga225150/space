@@ -1,0 +1,62 @@
+.image-change {
+  min-width: 250px;
+  justify-content: left;
+}
+
+.image-change>p {
+  flex-direction: row;
+  color: black;
+  background-color: yellow;
+}
+
+.posthead {
+  background-color: white;
+  font-weight: bold;
+}
+
+.image-display {
+  justify-content: right;
+}
+
+.file-selection {
+  background-color: blue;
+}
+
+.title {
+  color: white;
+  list-style: none;
+}
+
+.btn-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.edit-btn {
+  display: inline-block;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(197, 193, 193);
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.or-text {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.delete-btn {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(197, 193, 193);
+  margin-right: 30px;
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+}

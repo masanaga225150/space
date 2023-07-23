@@ -1,0 +1,21 @@
+<%= render "header" %>
+<div class="menu">
+  <div class="post-list">
+    <% @posts.order(created_at: :desc).each do |post| %>
+      <div class="post">
+        <%= link_to image_tag(post.image, size: "200x200", alt: "投稿画像"), edit_post_path(post) %>
+      <li>
+        <div class='nickname'>
+          <%= post.user.nickname %>
+        </div>
+      </li>
+      <li>
+        <div class='title'>
+          <%= post.title %>
+        </div>
+      </li>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="form-show"></div>
